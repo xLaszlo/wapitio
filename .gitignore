@@ -1,0 +1,35 @@
+# local planning docs — never publish
+plans/*
+!plans/.gitkeep
+
+# dependencies
+node_modules/
+.pnpm-store/
+
+# build output
+dist/
+out/
+*.tsbuildinfo
+
+# packaging artifacts
+*.vsix
+
+# test / coverage
+coverage/
+
+# vite / vitest
+.vite/
+*.local
+
+# editors & OS
+.vscode/*
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+.DS_Store
+
+# logs
+*.log
+npm-debug.log*
+
+AGENTS.md
