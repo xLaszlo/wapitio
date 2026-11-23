@@ -1,0 +1,36 @@
+{
+  "name": "@wapitio/core",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Core rendering for wapitio: schema, parsing, validation, elkjs layout, and the markdown-it fence rule.",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@xyflow/vue": "^2.0.2",
+    "elkjs": "^0.9.3",
+    "js-yaml": "^4.1.0",
+    "markdown-it": "^14.1.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/markdown-it": "^14.1.2",
+    "vue": "^3.5.13"
+  },
+  "peerDependencies": {
+    "vue": "^3.5.0"
+  }
+}
